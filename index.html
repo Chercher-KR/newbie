@@ -11,5 +11,29 @@
     <li>Camping</li>
     <li>Gardening</li>
   </ol>
+  #sidebar { font-size: 14px; z-index: 100; 
+-webkit-transform: translate3d(-300px,0,0);
+-moz-transform: translate3d(-300px,0,0);
+transform: translate3d(-300px,0,0);
+-webkit-transition: all 0.2s;
+-moz-transition: all 0.2s;
+-ms-transition: all 0.2s;
+-o-transition: all 0.2s;
+transition: all 0.2s;
+}
+
+html.open #sidebar { overflow-y: auto;
+-webkit-transform: translate3d(0,0,0);
+-moz-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+-webkit-transition: all 0.2s;
+-moz-transition: all 0.2s;
+-ms-transition: all 0.2s;
+-o-transition: all 0.2s;
+transition: all 0.2s;
+}
+
+#sidebar-toggle { display: block; position: fixed; left: 10px; bottom: 10px; width: 50px; height: 50px; line-height: 55px; text-align: center; color: #555; background-color: #f1f1f1; border-radius: 10px; opacity: 0.9; box-shadow: 0 0 10px #aaa; z-index: 101; }
+
 </body>
 </html>
